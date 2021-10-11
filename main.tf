@@ -39,7 +39,7 @@ locals {
 }
 
 resource "cloudflare_waf_rule" "rules" {
-  for_each = var.module_enabled ? local.rules : tomap({})
+  for_each = var.module_enabled && !contains(local.anomaly_packages, var.package_id) ? local.rules : tomap({})
 
   package_id = var.package_id
   zone_id    = var.zone_id
