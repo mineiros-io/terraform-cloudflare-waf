@@ -22,7 +22,7 @@ resource "cloudflare_waf_package" "package" {
 }
 
 locals {
-  groups = { for b in var.groups : b.group_id => b }
+  groups = { for g in var.groups : g.group_id => g }
 }
 
 resource "cloudflare_waf_group" "groups" {
@@ -35,7 +35,7 @@ resource "cloudflare_waf_group" "groups" {
 }
 
 locals {
-  rules = { for b in var.rules : b.rule_id => b }
+  rules = { for r in var.rules : r.rule_id => r }
 }
 
 resource "cloudflare_waf_rule" "rules" {
