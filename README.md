@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/mineiros-io/terraform-cloudflare-waf/workflows/Tests/badge.svg)](https://github.com/mineiros-io/terraform-cloudflare-waf/actions)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/mineiros-io/terraform-cloudflare-waf.svg?label=latest&sort=semver)](https://github.com/mineiros-io/terraform-cloudflare-waf/releases)
-[![Terraform Version](https://img.shields.io/badge/Terraform-1.x-623CE4.svg?logo=terraform)](https://github.com/hashicorp/terraform/releases)
+[![Terraform Version](https://img.shields.io/badge/terraform-0.14.7+%20|%202-623CE4.svg?logo=terraform)](https://github.com/hashicorp/terraform/releases)
 [![Join Slack](https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack)](https://mineiros.io/slack)
 
 # terraform-cloudflare-waf

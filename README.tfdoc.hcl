@@ -15,7 +15,7 @@ header {
   }
 
   badge "terraform" {
-    image = "https://img.shields.io/badge/Terraform-1.x-623CE4.svg?logo=terraform"
+    image = "https://img.shields.io/badge/terraform-0.14.7+%20|%202-623CE4.svg?logo=terraform"
     url   = "https://github.com/hashicorp/terraform/releases"
     text  = "Terraform Version"
   }
