@@ -62,7 +62,7 @@ section {
 
       ```hcl
       module "terraform-cloudflare-waf" {
-        source = "git@github.com:mineiros-io/terraform-cloudflare-waf.git?ref=v0.0.1"
+        source = "git@github.com:mineiros-io/terraform-cloudflare-waf.git?ref=v0.1.1"
 
         zone_id    = "zone-id"
         package_id = "package-id"
