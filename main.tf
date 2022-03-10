@@ -26,7 +26,7 @@ locals {
 }
 
 resource "cloudflare_waf_group" "groups" {
-  for_each = var.module_enabled ? local.groups : tomap({})
+  for_each = var.module_enabled ? local.groups : {}
 
   package_id = var.package_id
   zone_id    = var.zone_id
@@ -39,7 +39,7 @@ locals {
 }
 
 resource "cloudflare_waf_rule" "rules" {
-  for_each = var.module_enabled ? local.rules : tomap({})
+  for_each = var.module_enabled ? local.rules : {}
 
   package_id = var.package_id
   zone_id    = var.zone_id
